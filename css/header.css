@@ -1,12 +1,12 @@
 .header-main {
-    background-color: #76BACF;
+    background-color: var(--header-border_image-color);
     margin: 1.5rem;
 
 }
 
 .header-main h1 {
     height: 23vh; 
-    color: #145787;
+    color: var(--header_text-color);
     font-family: "Emilys Candy", serif;
     font-size: 6.5rem;
     display: flex;
