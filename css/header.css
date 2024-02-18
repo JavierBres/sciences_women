@@ -5,8 +5,8 @@
 }
 
 .header-main h1 {
-    height: 23vh; 
-    color: var(--header_text-color);
+    height: 22vh; 
+    color: var(--text_header-color);
     font-family: "Emilys Candy", serif;
     font-size: 6.5rem;
     display: flex;

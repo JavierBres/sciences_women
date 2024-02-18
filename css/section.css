@@ -11,13 +11,34 @@
     padding: 0 2rem;
 }
 
-.section-card-figure img {
-    width: 20vw;
-    border-radius: 1.5rem;
+
+.section-card {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-end;
+    margin: 0 10rem;
 }
 
 .section-card-figure {
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
+    flex: 0 0 33.33%;
+    padding: 2rem;
 }
+
+.section-card figure img {
+    width: 100%;
+    height: auto;
+    border: 0.3rem solid var(--text_name-color);
+    border-radius: 1.5rem;
+}
+
+.section-card figure figcaption {
+    border: 0.2rem solid;
+    border-radius: 0.4rem;
+    background-color: var(--text_name-color);
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding: 0 1rem;
+}
+
+
+
