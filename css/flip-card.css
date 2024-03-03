@@ -2,6 +2,8 @@
     display: flex;
     flex-wrap: wrap;
     align-items: flex-end;
+    justify-content: center;
+    gap: 2rem;
 }
 
 .flip-card {
@@ -21,7 +23,6 @@
 .flip-card-front, .flip-card-back {
     -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
-    padding: 0 2rem;
 }
 
 .flip-card-front img {
@@ -42,9 +43,11 @@
     border: 0.3rem solid var(--text_name-color);
     border-radius: 1.5rem;
     font-size: 1vw;
+    text-align: justify;
+    padding: 2rem;
 }
 
-.flip-card-text {
+.flip-card-name {
     border: 0.2rem solid;
     border-radius: 0.4rem;
     background-color: var(--text_name-color);
@@ -53,5 +56,12 @@
     text-align: center;
     padding: 0 1rem;
 }
+
+.flip-card-back a {
+    position: absolute;
+    bottom: 5%;
+}
+
+
 
 
