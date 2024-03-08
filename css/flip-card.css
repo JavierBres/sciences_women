@@ -46,6 +46,8 @@
     font-size: 1vw;
     text-align: justify;
     padding: 2rem;
+    display: flex;
+    justify-content: center;
 }
 
 .flip-card-name {
@@ -64,6 +66,6 @@
 
 .flip-card-back a {
     position: absolute;
-    bottom: 5%;
+    bottom: 3%;
 }
 
