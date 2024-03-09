@@ -69,3 +69,17 @@
     bottom: 3%;
 }
 
+a:link {
+    color: violet;
+    text-decoration: none;
+}
+
+a:hover {
+    color: blue;
+    text-decoration: underline;
+}
+
+a:visited {
+    color: aquamarine;
+}
+
