@@ -83,3 +83,16 @@ a:visited {
     color: aquamarine;
 }
 
+@media screen and (max-width: 1200px) {
+    .flip-card-front img {
+        width: 22rem;
+        height: 22rem;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .flip-card-front img {
+        width: 15rem;
+        height: 15rem;
+    }
+}
