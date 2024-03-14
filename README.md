@@ -11,7 +11,7 @@ Es un proyecto en desarrollo continuo, que irá de menos a más, empezando con u
 Esta idea nació viendo una publicación de Facebook del Telecentro de Luiña (Ibias, Asturias), de una noticia respecto del día internacional de la mujer y la niña en la ciencia, que se celebra el 11 de febrero. A partir de ese día empezó la idea de unir
 pasiones propias como son la historia, la ciencia y la programación web.
 
-## 2. Mokup
+## 2. Mockup
 
 <img src="assets/images/figma/Desktop version-grey.svg" alt="Figma Desktop version grey" width="30%">
 <img src="assets/images/figma/Desktop version-color.svg" alt="Figma Desktop version color" width="30%">
@@ -35,9 +35,3 @@ pasiones propias como son la historia, la ciencia y la programación web.
 <li>GitHub <img src="assets/images/icons/GitHub-logo.svg" alt="github" width="40" height="40"/></li>
 <li>Visual Studio Code <img src="assets/images/icons/Visual_Studio_Code-icon.svg" alt="visualstudiocode" width="35" height="35"/></li>
 </ul>
-
-
-
-
-
-
