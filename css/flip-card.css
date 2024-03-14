@@ -45,7 +45,7 @@
     border-radius: 1.5rem;
     font-size: 1vw;
     text-align: justify;
-    padding: 2rem;
+    padding: 3vw;
     display: flex;
     justify-content: center;
 }
@@ -104,6 +104,13 @@ a:visited {
     }
 
     .flip-card-name {
+        height: 3rem;
         font-size: 1rem;
+    }
+}
+
+@media screen and (width <= 400px) {
+    .flip-card-back {
+        font-size: 2vw;
     }
 }
