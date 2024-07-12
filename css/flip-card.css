@@ -43,7 +43,7 @@
     transform: rotateY(180deg);
     border: 0.3rem solid var(--text_name-color);
     border-radius: 1.5rem;
-    font-size: 1vw;
+    font-size: 0.9vw;
     text-align: justify;
     padding: 3vw;
     display: flex;
