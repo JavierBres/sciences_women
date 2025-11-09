@@ -2,12 +2,11 @@
     border-radius: 0.5rem;
     background-color: var(--text_section-color);
     margin: 0 5vw 5vw;
-}
 
-.section-text p {
-    font-family: "Jost", sans-serif;
-    text-align: justify;
-    font-size: 2vw;
-    padding: 2vw 4vw;
+    p {
+        font-family: "Jost", sans-serif;
+        text-align: justify;
+        font-size: 2vw;
+        padding: 2vw 4vw;
+    }
 }
-

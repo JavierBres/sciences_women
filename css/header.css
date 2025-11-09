@@ -1,19 +1,19 @@
 .header-main {
     background-color: var(--header-border_image-color);
     margin: 2vw;
+
+    h1 {
+        height: 25vh;
+        color: var(--text_header-color);
+        font-family: "Emilys Candy", serif;
+        font-size: 6.5vw;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
 }
 
-.header-main h1 {
-    height: 25vh; 
-    color: var(--text_header-color);
-    font-family: "Emilys Candy", serif;
-    font-size: 6.5vw;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-@media screen and (width <= 800px) {
+@media screen and (width <=800px) {
     .header-main h1 {
         height: 15vh;
     }
