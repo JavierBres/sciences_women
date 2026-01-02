@@ -1,116 +1,111 @@
-.section-flip-card {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: flex-end;
-    justify-content: center;
-    gap: 2rem;
-    margin-bottom: 10vh;
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-end;
+  justify-content: center;
+  gap: 2rem;
+  margin-bottom: 4rem;
 }
 
-.flip-card {
-    flex: 0 0 25%;
+.flip-checkbox {
+  display: none;
 }
 
-.flip-card__inner {
-    text-align: center;
-    transition: transform 0.6s;
-    transform-style: preserve-3d;
+.card__flipper {
+  width: 32rem;
+  height: 32rem;
+  position: relative;
+  display: block;
+  transform-style: preserve-3d;
+  transition: transform 1s;
+  cursor: pointer;
 }
 
-.flip-card:hover .flip-card__inner {
-    transform: rotateY(180deg);
+.flip-checkbox:checked ~ .card__flipper {
+  transform: rotateY(180deg);
 }
 
-.flip-card__front, .flip-card__back {
-    -webkit-backface-visibility: hidden;
-    backface-visibility: hidden;
+.card__front,
+.card__back {
+  width: 100%;
+  height: 100%;
+  border-radius: 1.5rem;
+  position: absolute;
+  backface-visibility: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.flip-card__front img {
-    width: 32rem;
-    height: 32rem;
-    border: 0.3rem solid var(--text_name-color);
-    border-radius: 1.5rem;
+.card__front img {
+  width: 100%;
+  height: 100%;
+  object-fit: fill;
+  border: 0.3rem solid var(--text_name-color);
+  border-radius: 1.5rem;
 }
 
-.flip-card__back {
-    position: absolute;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    background-color: black;
-    color: white;
-    transform: rotateY(180deg);
-    border: 0.3rem solid var(--text_name-color);
-    border-radius: 1.5rem;
-    font-size: 0.9vw;
-    text-align: justify;
-    padding: 3vw;
-    display: flex;
-    justify-content: center;
+.card__back {
+  transform: rotateY(180deg);
+  background-color: black;
+  padding: 2rem;
+  overflow: auto;
 }
 
-.flip-card__name {
-    height: 5rem;
-    border: 0.2rem solid;
-    border-radius: 0.4rem;
-    background-color: var(--text_name-color);
-    font-size: 1.5rem;
-    font-weight: bold;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
+.card__back p {
+  color: white;
+  text-align: justify;
+  line-height: 1.6;
 }
 
-.flip-card__back a {
-    position: absolute;
-    bottom: 3%;
-}
+.card__back a {
+  position: absolute;
+  bottom: 3%;
 
-a:link {
-    color: violet;
-    text-decoration: none;
-}
-
-a:hover {
+  &:link {
     color: blue;
-    text-decoration: underline;
+  }
+
+  &:visited {
+    color: purple;
+  }
+
+  &:hover {
+    color: yellow;
+  }
+
+  &:active {
+    color: red;
+  }  
 }
 
-a:visited {
-    color: aquamarine;
+.card__name {
+  border: 0.2rem solid;
+  border-radius: 1rem;
+  background-color: var(--text_name-color);
+  font-size: 1.5rem;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1rem;
+  padding: 1.5rem;
 }
 
-@media screen and (width <= 800px) {
-    .flip-card__front img {
-        width: 25rem;
-        height: 25rem;
-    }
+@media (width <= 640px) {
+  .card__flipper {
+    width: 20rem;
+    height: 20rem;
+  }
 
-    .flip-card__back {
-        font-size: 2vw;
-    }
-}
+  .card__back p {
+    font-size: 0.7rem;
+    line-height: 0.9rem;
+  }
 
-@media screen and (width <= 500px) {
-    .flip-card__front img {
-        width: 15rem;
-        height: 15rem;
-    }
-
-    .flip-card__back {
-        font-size: 1.5vw;
-    }
-
-    .flip-card__name {
-        height: 3rem;
-        font-size: 1rem;
-    }
-}
-
-@media screen and (width <= 400px) {
-    .flip-card__back {
-        font-size: 2vw;
-    }
+  .card__name {
+    font-size: 1.3rem;
+    margin-top: 0.5rem;
+    padding: 0.5rem;
+  }
 }
