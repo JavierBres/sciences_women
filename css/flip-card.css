@@ -34,7 +34,6 @@
   backface-visibility: hidden;
   display: flex;
   justify-content: center;
-  align-items: center;
 }
 
 .card__front img {
@@ -98,9 +97,17 @@
     height: 20rem;
   }
 
+  .card__back {
+    padding: 1.1rem;
+  }
+
   .card__back p {
     font-size: 0.7rem;
     line-height: 0.9rem;
+  }
+
+  .card__back a {
+    font-size: 0.8rem;
   }
 
   .card__name {
