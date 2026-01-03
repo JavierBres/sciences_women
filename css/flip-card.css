@@ -1,8 +1,10 @@
 .container {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: flex-end;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(600px, 1fr));
+  justify-items: center;
+  align-items: center;
   justify-content: center;
+  align-content: center;
   gap: 2rem;
   margin-bottom: 4rem;
 }
@@ -33,7 +35,7 @@
   position: absolute;
   backface-visibility: hidden;
   display: flex;
-  justify-content: center;
+  justify-content: center;  
 }
 
 .card__front img {

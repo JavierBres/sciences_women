@@ -1,78 +1,117 @@
 # Science's Women
 
- 1. [Descripción del proyecto](#1-descripción-del-proyecto)
- 2. [Objetivos](#2-objetivos)
- 3. [Roadmap](#3-roadmap)
- 4. [Mockups de diseño](#4-mockups-de-diseño)
- 5. [Stacks y herramientas](#5-stacks-y-herramientas)
- 6. [Cómo ejecutar el proyecto](#6-cómo-ejecutar-el-proyecto)
- 7. [Estructura del repositorio](#7-estructura-del-repositorio)
- 8. [Contribución](#8-contribución)
- 9. [Licencia](#9-licencia)
+## Tabla de contenidos
 
- ## 1. Descripción del proyecto
+1. [Descripción del proyecto](#1-descripción-del-proyecto)
+2. [Objetivos](#2-objetivos)
+3. [Roadmap](#3-roadmap)
+4. [Stack tecnológico](#4-stack-tecnológico)
+5. [Instalación y ejecución](#5-instalación-y-ejecución)
+6. [Estructura del proyecto](#6-estructura-del-proyecto)
+7. [Contribución](#7-contribución)
 
- Science's women es un proyecto dedicado a visibilizar a mujeres que han destacado en el mundo de la ciencia. Es un proyecto en desarrollo continuo, que irá de menos a más, empezando con un código solo basado en HTML y CSS, y que irán sumando otros lenguajes como JavaScript y Java, librerías como React, bases de datos,... Esta idea nació viendo una publicación de Facebook del Telecentro de Luiña (Ibias, Asturias), de una noticia respecto del día internacional de la mujer y la niña en la ciencia, que se celebra el 11 de febrero. A partir de ese día empezó la idea de unir pasiones propias como son la historia, la ciencia y la programación web.
+## 1. Descripción del proyecto
 
- Science's Women es un proyecto dedicado a visibilizar a mujeres que han destacado en el mundo de la ciencia a lo largo de la historia y en la actualidad.
- 
+Science's women es un proyecto dedicado a visibilizar a mujeres que han destacado en el mundo de la ciencia a lo largo de la historia y en la actualidad. Es un proyecto en desarrollo contínuo, que irá de menos a más, empezando con un código solo basado en HTML y CSS, y que irán sumando otros lenguajes de programación, librerías y frameworks, añadiendo bases de datos,... Esta idea nació viendo una publicación de Facebook del Telecentro de Luiña (Ibias, Asturias), de una noticia del día internacional de la mujer y la niña en la ciencia, que se celebra el 11 de febrero. A partir de ese día empezó la idea de unir pasiones como son la historia, la ciencia y la programación web.
 
 ## 2. Objetivos
 
-- Visibilizar referentes femeninos en la ciencia con información accesible y bien curada.
-- Evolucionar técnicamente el proyecto iteración a iteración, incorporando nuevas tecnologías.
-- Practicar buenas prácticas de desarrollo: control de versiones, diseño responsivo, accesibilidad, testing y documentación.
+- **Visibilización**: Proporcionar referentes femeninos en ciencia mediante contenido accesible.
+- **Evolución técnica**: Implementar un enfoque de desarrollo iterativo, incorporando progresivamente nuevas tecnologías y patrones de arquitectura.
+- **Calidad de código**: Aplicar buenas prácticas de desarrollo: versionado con Git, diseño responsive, accesibilidad web (WCAG), testing y documentación técnica.
 
- ## 3. Roadmap
+## 3. Roadmap
 
- - Fase 1: Maquetación estática con HTML5 y CSS3. Diseño responsive y accesible (semántica, contraste, navegación por teclado).
- - Fase 2: Interactividad con JavaScript (búsqueda/filtrado, navegación, componentes reutilizables).
- - Fase 3: Framework frontend (p. ej. React) para escalar la UI y el estado.
- - Fase 4: Backend y API (p. ej. Node/Express) para servir contenidos dinámicos.
-- Fase 5: Base de datos (p. ej. PostgreSQL) y despliegue.
+### Fase 1: Maquetación estática (Actual)
+- HTML5 semántico y CSS3
+- Diseño responsive
+- Accesibilidad: semántica HTML, contraste de colores, navegación por teclado, etiquetas ARIA
 
-## 4. Mockups de diseño
+### Fase 2: Interactividad
+- JavaScript vanilla para funcionalidades de búsqueda y filtrado
+- Componentes reutilizables y manipulación del DOM
 
-<img src="assets/images/figma/Desktop version-grey.svg" alt="Figma Desktop version grey" width="30%">
-<img src="assets/images/figma/Desktop version-color.svg" alt="Figma Desktop version color" width="30%">
-<img src="assets/images/figma/Mobile version-grey.svg" alt="Figma Mobile version grey" width="10%">
-<img src="assets/images/figma/Mobile version-color.svg" alt="Figma Mobile version color" width="10%">
+### Fase 3: Framework frontend
+- Migración a framework React con TypeScript
+- Arquitectura de componentes
+- Gestión de estado con librerías especializadas (Redux, Zustand, etc.)
 
-<img src="assets/images/figma/printing & colors.svg" alt="Printing and colors" width="10%">
+### Fase 4: Backend y API
+- Implementación de servidor (Node.js/Express)
+- API RESTful para servir contenido dinámico
+- Autenticación y autorización (si aplica)
 
-## 5. Stacks y herramientas
+### Fase 5: Base de datos y despliegue
+- Modelado de datos e implementación de base de datos (PostgreSQL, MongoDB, etc.)
+- CI/CD pipeline
+- Despliegue en producción (Vercel, Netlify, AWS, etc.)
 
-Tecnologías utilizadas (en evolución):
+## 4. Stack tecnológico
 
-<ul>
- <li>HTML5 <img src="assets/images/icons/HTML5-logo.svg" alt="html5" width="40" height="40"></li>
- <li>CSS <img src="assets/images/icons/CSS3-logo.svg" alt="css3" width="40" height="40"></li>
- <li>Figma <img src="assets/images/icons/Figma-logo.svg" alt="figma" height="20"/></li>
- <li>Jira <img src="assets/images/icons/Jira-logo.png" alt="jira"  height="20"/></li>
- <li>Confluence <img src="assets/images/icons/Confluence-logo.svg" alt="confluence" height="20"/></li>
- <li>Git <img src="assets/images/icons/Git-logo.svg" alt="git" width="40" height="40"/></li>
- <li>GitHub <img src="assets/images/icons/GitHub-logo.svg" alt="github" width="40" height="40"/></li>
- <li>Visual Studio Code <img src="assets/images/icons/Visual_Studio_Code-icon.svg" alt="visualstudiocode" width="35" height="35"/></li>
-</ul>
+### Lenguajes y estándares
+- **HTML5**: Estructura semántica del documento
+- **CSS3**: Estilos, layout (Flexbox/Grid), animaciones y diseño responsive
 
-## 6. Cómo ejecutar el proyecto
+### Herramientas de desarrollo
+- **Git**: Control de versiones distribuido
+- **GitHub**: Repositorio remoto y gestión de issues/PRs
+- **Visual Studio Code**: Editor de código fuente
 
-- Clona el repositorio y abre el archivo `index.html` directamente en tu navegador.
-- Alternativa recomendada: sirve el sitio con un servidor estático para evitar problemas de rutas.
-  - Por ejemplo, con Node: `npx serve .` y abre la URL indicada.
+### Gestión de proyecto (opcional)
+- **Figma**: Diseño de interfaces y prototipado
+- **Jira**: Seguimiento de tareas y sprints
 
-## 7. Estructura del repositorio
+## 5. Instalación y ejecución
 
-- `assets/` – Recursos estáticos (imágenes, iconos, tipografías, etc.).
-- `styles/` – Hojas de estilo CSS.
-- `scripts/` – JavaScript (cuando se incorpore).
-- `index.html` – Página principal.
+### Requisitos previos
+- Navegador web moderno (Chrome, Firefox, Safari, Edge)
+- Git (para clonar el repositorio)
+- Node.js y npm (opcional, para servidor de desarrollo)
 
-## 8. Contribución
+### Ejecución local
 
-- Abre un Issue con propuestas/mejoras.
-- Crea un fork, una rama descriptiva y un Pull Request con cambios bien documentados.
+1. **Clonar el repositorio**:
+   ```bash
+   git clone <repository-url>
+   cd "Science's women"
+   ```
 
-## 9. Licencia
+2. **Opción A: Abrir directamente**:
+   ```bash
+   # Abre index.html directamente en el navegador
+   ```
 
-Este proyecto se distribuye bajo una licencia abierta. Si necesitas otra, propón el cambio en un Issue.
+## 6. Estructura del proyecto
+
+```
+Science's women/
+├── assets/
+│   └── images/
+│       └── women/          # Imágenes de perfil de las científicas
+├── css/
+│   ├── colors.css          # Variables y paleta de colores
+│   ├── common.css          # Estilos globales y resets
+│   ├── flip-card.css       # Estilos del componente tarjeta
+│   ├── footer.css          # Estilos del footer
+│   ├── header.css          # Estilos del header
+│   ├── section.css         # Estilos de secciones
+│   └── styles.css          # Archivo principal de estilos (imports)
+├── index.html              # Punto de entrada de la aplicación
+└── README.md               # Documentación del proyecto
+```
+
+## 7. Contribución
+
+### Proceso de contribución
+
+1. **Reportar issues**: Abre un issue describiendo el problema o mejora propuesta
+2. **Fork y rama**: Haz fork del repositorio y crea una rama descriptiva (`git checkout -b feature/nueva-funcionalidad`)
+3. **Desarrollo**: Implementa los cambios siguiendo las convenciones del proyecto
+4. **Commit**: Realiza commits descriptivos siguiendo convenciones de mensajes (p. ej., Conventional Commits)
+5. **Pull Request**: Envía un PR con descripción clara de los cambios y referencias a issues relacionados
+
+### Guías de estilo
+- Usar indentación consistente (espacios o tabs según estándar del proyecto)
+- Comentar código complejo
+- Mantener accesibilidad y semántica HTML
+- Asegurar compatibilidad cross-browser
